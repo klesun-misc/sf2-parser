@@ -17,6 +17,7 @@ es6 import usage
 </script>
 ```
 Outputs:
+
 ![image](https://user-images.githubusercontent.com/5202330/73133607-e5bb7980-4033-11ea-93cc-f6744647d49c.png)
 
 ___________________________________________
