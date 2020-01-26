@@ -10,26 +10,14 @@
  *   https://github.com/gree/sf2synth.js
  *
  * Licensed under the MIT License.
+ *
+ * modified by klesun to coply with es6 import/export
  */
 
 /*global require*/
 
-(function (root, factory) {
-    if (typeof exports === "object") {
-        // We're in a CommonJS-style loader.
-        root.sf2 = exports;
-        factory(exports);
-    } else if (typeof define === "function" && define.amd) {
-        // We're in an AMD-style loader.
-        define(["exports"], function (exports) {
-            root.sf2 = exports;
-            return (root.sf2, factory(exports));
-        });
-    } else {
-        // Plain old browser.
-        root.sf2 = {};
-        factory(root.sf2);
-    }
+export dafault (function (root, factory) {
+    // removed the AMD/CJS/<script src> support from here
 }(this, function (exports) {
     "use strict";
 
