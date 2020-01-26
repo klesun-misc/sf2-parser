@@ -16,7 +16,7 @@
 
 /*global require*/
 
-export dafault (function (root, factory) {
+export default (function (root, factory) {
     // removed the AMD/CJS/<script src> support from here
 }(this, function (exports) {
     "use strict";
