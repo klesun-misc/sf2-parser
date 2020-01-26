@@ -18,9 +18,9 @@
 
 export default (function (root, factory) {
     // removed the AMD/CJS/<script src> support from here
-    root.sf2 = {};
-    factory(root.sf2);
-    return root.sf2;
+    const sf2 = {};
+    factory(sf2);
+    return sf2;
 }(this, function (exports) {
     "use strict";
 
