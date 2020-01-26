@@ -1,3 +1,21 @@
+es6 import usage
+==================
+```javascript
+import sf3 from 'https://klesun-misc.github.io/sf3-parser-es6/src/sf3-parser-es6.js';
+const sfFluidUrl = 'https://dl.dropbox.com/s/dm2ocmb96nkl458/fluid.sf3?dl=0';
+fetch(sfFluidUrl)
+    .then(rs => rs.arrayBuffer())
+    .then(sf3Buf => {
+        const view = new Uint8Array(sf3Buf);
+        const root = new sf3.Parser(view, {
+            parserOptions: {isSf3: true},
+        });
+        console.log(root);
+    });
+```
+
+___________________________________________
+
 SoundFont 2 (and 3) Parser
 ==================
 
